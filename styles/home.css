@@ -10,7 +10,7 @@
     background: linear-gradient(to right, #5E239D, #ffffff00);
     width: 100%;
     mix-blend-mode: multiply;
-    height:100%;
+    height: 100%;
     z-index: -1;
 }
 .header::before{
@@ -65,16 +65,19 @@
     position: relative;
 }
 .main__card{
-    top: 67vh;
-    position: absolute;
-    width: 920px;
+    padding: 100px 0;
     display: flex;
-    gap: 43px;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 35px 49px 35px 230px;
+    gap: 43px;
 }
-
+.main__card::before{
+    position: absolute;
+    height: 100px;
+    left: 0;
+    content: '';
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
 .main__card p{
     font-size: 18px;
     color: #fff;
@@ -119,6 +122,9 @@
     font-family: var(--basic-fond-famali);
     width: 362px;
 }
+.advantages__content p{
+    margin-bottom: 12px;
+}
 .advantages__container-box{
     margin-top: 135px;
     position: relative;
@@ -128,24 +134,22 @@
     right: 0;
     bottom: 0;
 }
-.advantages__container1{
+.advantages__container{
+    padding: 110px 0;
+    height: 324px;
+}
+.advantages__container:nth-child(1) {
     background-color: #5E239D;
-    padding: 100px 0;
-    height: 324px;
 }
-.advantages__container2{
+.advantages__container:nth-child(2) {
     background-color: var(--secondaty_300-color);
-    padding: 100px 0;
-    height: 324px;
 }
-.advantages__container3{
+.advantages__container:nth-child(3) {
     background-color: var(--secondaty_400-color);
-    padding: 100px 0;
-    height: 324px;
 }
 .advantages__container-flex{
     display: flex;
-    gap: 300px;
+    gap: 18%;
 }
 .advantages__container-flex h3{
     width: 253px;
@@ -207,4 +211,134 @@
     flex-wrap: wrap;
     width: 500px;
     gap: 75px 140px ;
+}
+.reviews{
+    background: url('../imges/reviews_background.png') no-repeat center rgba(252, 252, 252, 1);
+}
+.reviews__content{
+    padding: 180px 0 130px;
+    text-align: center;
+    position: relative;
+}
+.reviews__content img:nth-child(2){
+    position: absolute;
+    bottom: 390px;
+    left: 46.8%;
+}
+.reviews__content-cards{
+    margin-top: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews__cards-text p:nth-child(1){
+    font-family: 'Noticia Text';
+    width: 754px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 177.4%;
+}
+.reviews__cards-text p:nth-child(2){
+    font-family: var(--basic-fond-famali);
+    font-size: 18px;
+    
+}
+.reviews__cards-text p span{
+    font-weight: 600;
+}
+.reviews__content-cards img:last-child{
+    transform: rotate(180deg);
+}
+.subscription__content{
+    padding: 130px 0;
+    text-align: center;
+}
+.subscription__content h2{
+    margin-bottom: 23px;
+}
+.subscription__content p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(119, 108, 130, 1);
+}
+.subscription__form{
+    width: 522px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0px 4px 1px rgba(244, 244, 237, 1);
+}
+.subscription__content form{
+    margin-top: 45px;
+}
+.subscription__content form input{
+    font-weight: 800;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.subscription__content form input[type='email']{
+    padding: 10px;
+    font-size: 18px;
+    color: rgba(155, 148, 163, 1);
+}
+.subscription__content form input[type='submit']{
+    color: var(--primary-color);
+    letter-spacing: 6px;
+    font-size: 12.6px;
+}
+.subscription__form-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to top, rgba(242, 242, 242, 1), rgba(255, 255, 255, 0));
+    padding: 15px 27px;
+}
+.footer{
+    background-color: var(--secondaty_400-color);
+    padding: 124px 0;
+    color: #fff;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__content-logo img{
+    margin-bottom: 17px;
+}
+.footer__content-logo p{
+    width: 166px;
+}
+.footer__content-title{
+    text-transform: uppercase;
+    font-size: 12.6px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 27px;
+}
+.footer__content-text ul li{
+    padding: 5px 0;
+    font-size: 12.6px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.footer__content-cards{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer__content-cards img{
+    width: 15px;
+}
+.footer__content-flex{
+    display: flex;
+    gap: 42px;
+}
+.footer__desc{
+    margin-top: 70px;
+    padding-left: 30.6%;
 }
