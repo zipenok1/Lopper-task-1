@@ -23,11 +23,21 @@
                 <img src="./imges/icon/tel.svg" alt="tel">
                 <p>(01) 666 - 693 - 456</p>
             </div>
+            <div class="header__burger">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+            </div>
         </div> 
         <div class="main">
-            <div class="main__content wrap">
-                <p>What we  do?</p>
-                <h1>We grow <br><span>great business</span></h1>
+            <div class="main__container wrap">
+                <div class="main__content ">
+                    <p>What we  do?</p>
+                    <h1>We grow <br><span>great business</span></h1>
+                </div>
+                <div class="main__scroll">
+                    <p>Scroll to see more</p>
+                    <a href="#review"><img src="imges/icon/arrowD.svg" alt="arrowD"></a>
+                </div>
             </div>
             <div class="main__card wrap">
                 <p>Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.</p> 
@@ -86,7 +96,7 @@
                         <p>Id consectetur purus ut faucibus pulvinar elementum integer enim. A arcu cursus vitae congue mauris rhoncus aenean.</p>
                     </div>
                 </div>
-                <img src="./imges/abvCards.jpg" alt="">
+                <img src="./imges/abvCards.jpg" alt="abvCards">
             </div> 
         </section>
         <section class="about">
@@ -126,9 +136,9 @@
                 </div>      
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="review">
             <div class="reviews__content wrap">
-                <img src="imges/reviews.png" alt="reviews">
+                <img class="reviews__content-img" src="imges/reviews.png" alt="reviews">
                 <img src="imges/quotes.png" alt="">
                     <div class="reviews__content-cards">
                         <img src="imges/reviewsSlader.png" alt="reviewsSlader">
@@ -153,6 +163,7 @@
                 </form>
             </div>
         </section>
+    </main>
         <footer class="footer">
             <div class="footer__content wrap">
                 <div class="footer__content-logo">
@@ -182,28 +193,27 @@
                 <div class="footer__content-text">
                     <p class="footer__content-title">Contact us</p>
                     <div class="footer__content-cards">
-                        <img src="imges/icon/email.svg" alt="">
+                        <img src="imges/icon/email.svg" alt="email">
                         <p>contact@lop.com</p>
                     </div>
                     <div class="footer__content-cards">
-                        <img src="imges/icon/tel.svg" alt="">
+                        <img src="imges/icon/tel.svg" alt="tel">
                         <p>856 - 693 - 456</p>
                     </div>
                 </div>
                 <div class="footer__content-text">
                     <p class="footer__content-title">Follow us</p>
                     <div class="footer__content-flex">
-                        <img src="imges/icon/footer1.svg" alt="">
-                        <img src="imges/icon/footer2.svg" alt="">
-                        <img src="imges/icon/footer3.svg" alt="">
-                        <img src="imges/icon/footer4.svg" alt="">
+                        <img src="imges/icon/footer1.svg" alt="footer">
+                        <img src="imges/icon/footer2.svg" alt="footer">
+                        <img src="imges/icon/footer3.svg" alt="footer">
+                        <img src="imges/icon/footer4.svg" alt="footer">
                     </div>
                 </div>
             </div> 
             <div class="footer__desc">
-                    <p>© 2019 Lopper by mariuszdaniel. All right reserved.</p>
+                <p>© 2019 Lopper by mariuszdaniel. All right reserved.</p>
             </div>
-        </footer>
-    </main>
+        </footer>   
 </body>
 </html>

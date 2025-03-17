@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url(../styles/about.css);
-@import url(../styles/contact.css);
-@import url(../styles/gallery.css);
-@import url(../styles/home.css);
-@import url(../styles/services.css);
-@import url(../styles/team.css);
+@import url(./home.css);
+@import url(./media.css);
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: var(--basic-fond-famali);
@@ -40,10 +39,13 @@ h4{
     font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin-bottom: 70px;
 }
 li{
     list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 .wrap{
     max-width: 1440px;
