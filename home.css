@@ -1,5 +1,5 @@
 .header{
-   background: url('../imges/Rectangle.jpg') no-repeat center;
+   background: url('./imges/Rectangle.jpg') no-repeat center;
    background-size: cover;
    position: relative;
    z-index: 1;
@@ -31,21 +31,23 @@
     display: flex;
     gap: 54px;
 }
+.header__navbar ul li, .header__tel, .main__content, .main__scroll, .main__card p,.footer{
+    color: var(--white-color);
+}
+.header__navbar ul li, .header__tel, .main__content p, .we__text-intro, .we__text-desc, .we_cards-title, .reviews__cards-text p span{
+    font-weight: 600;
+}
 .header__navbar ul li{
     font-size: var(--navbar-size);
     font-family: var(--basic-fond-famali);
     list-style: none;
-    font-weight: 600;
     letter-spacing: 2px;
-    color: #Fff;
 }
 .header__tel{
-    color: #Fff;
     display: flex;
     align-items: center;
     gap: 15px;
     letter-spacing: 2px;
-    font-weight: 600;
     font-size: var(--navbar-size);
 } 
 .header__burger{
@@ -67,16 +69,18 @@
     display: block;
     width: 100%;
     height: 4px;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .burger::before {
     top: 0;
-    box-shadow: 0 11px 0 #ffffff;
+    box-shadow: 0 11px 0 var(--white-color);
     transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
 }
 .burger::after {
     bottom: 0;
     transition: bottom .3s .15s, transform .3s;
+    width: 80%;
+    margin-left: 8px;
 }
 .burger-checkbox:checked + .burger::before {
     top: 12px;
@@ -96,13 +100,11 @@
     display: flex;
     justify-content: space-between;
 }
-.main__content{
-    color: #Fff;
+.main__scroll, .we__text-intro, .we__text-intro, .subscription__content form input[type='submit'], .footer__content-title, .footer__content-text ul li{
+    font-size: 12.6px;
 }
 .main__scroll{
-    color: #Fff;
     text-transform: uppercase;
-    font-size: 12.6px;
     letter-spacing: 6px;
     font-weight: 700;
     display: flex;
@@ -116,7 +118,6 @@
     letter-spacing: 4px;
     font-size: var(--navbar-size);
     font-family: var(--basic-fond-famali);
-    font-weight: 600;
     text-transform: uppercase;
 }
 .main{
@@ -139,8 +140,7 @@
 }  
 .main__card p{
     font-size: 18px;
-        color: #fff;
-        width: 48%;
+    width: 48%;
     font-family: var(--basic-fond-famali);
 }
 .we__content{
@@ -152,14 +152,11 @@
 .we__text-intro{
     color: var(--primary-color);
     font-family: var(--basic-fond-famali);
-    font-size: 12.6px;
     letter-spacing: 6px;
-    font-weight: 600;
     text-transform: uppercase;    
 }
 .we__text-desc{
     width: 734px;
-    font-weight: 600;
     color: var(--title_section-color);
     font-size: var(--title_desc-size);
     font-family: var(--basic-fond-famali);
@@ -173,7 +170,6 @@
 }
 .we_cards-title{
     padding: 18px 0 13px 0;
-    font-weight: 600;
     color: var(--title_section-color);
     font-size: var(--title_desc-size);
     font-family: var(--basic-fond-famali);
@@ -261,9 +257,9 @@
     margin-bottom: 16px;
 }
 .clients{
-    padding: 144px 0;
-    background: url('../imges/part.jpg') no-repeat center;
-    background-size: 100%;
+    padding: 144px 0 ;
+    background: url('./imges/part.jpg') no-repeat center;
+    background-size: cover;
     height: 648px;
 }
 .clients__content{
@@ -280,7 +276,7 @@
     gap: 75px 140px ;
 }
 .reviews{
-    background: url('../imges/reviews_background.png') no-repeat center rgba(252, 252, 252, 1);
+    background: url('./imges/reviews_background.png') no-repeat center rgba(252, 252, 252, 1);
 }
 .reviews__content{
     padding: 180px 0 130px;
@@ -308,9 +304,6 @@
 .reviews__cards-text p:nth-child(2){
     font-family: var(--basic-fond-famali);
     font-size: 18px;
-}
-.reviews__cards-text p span{
-    font-weight: 600;
 }
 .reviews__content-cards img:last-child{
     transform: rotate(180deg);
@@ -352,7 +345,6 @@
 .subscription__content form input[type='submit']{
     color: var(--primary-color);
     letter-spacing: 6px;
-    font-size: 12.6px;
     cursor: pointer;
 }
 .subscription__form-button{
@@ -365,7 +357,6 @@
 .footer{
     background-color: var(--secondaty_400-color);
     padding: 124px 0;
-    color: #fff;
 }
 .footer__content{
     display: flex;
@@ -379,7 +370,6 @@
 }
 .footer__content-title{
     text-transform: uppercase;
-    font-size: 12.6px;
     letter-spacing: 6px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -388,7 +378,6 @@
 }
 .footer__content-text ul li{
     padding: 5px 0;
-    font-size: 12.6px;
     letter-spacing: 1px;
     font-weight: bold;
 }

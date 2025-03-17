@@ -15,24 +15,22 @@
         padding: 64px 0;
     }
     .reviews__cards-text p:nth-child(1) {
-        font-family: 'Noticia Text';
         font-size: 30px; 
         width: 613px;
     }
     .advantages img {
         height: 1090px;
     }
-    .clients{
-        background-size: auto;
-    }
 }
 @media(max-width:1030px){
     .reviews__content img:nth-child(2) {
         left: 43.6%;
     }
-    .footer__content {
+    .footer__content, .clients__content-cards{
         display: flex;
         flex-wrap: wrap;
+    }
+    .footer__content {
         justify-content: center;
         gap: 10px;
     }
@@ -40,8 +38,6 @@
         margin-bottom: 30px;
     }
     .clients__content-cards {
-        display: flex;
-        flex-wrap: wrap;
         width: 438px;
         gap: 75px 100px;
     }
@@ -51,9 +47,6 @@
     }
 }
 @media(max-width:960px){
-    .we__content-cards {
-        justify-content: center;
-    }
     .we__content-text{
         width: 540px;
     }
@@ -145,7 +138,7 @@
     .header__content {
         justify-content: center ;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
     .we__content-text {
         width:100%;
@@ -179,7 +172,9 @@
         gap: 20px;
     }
     .reviews__content img:nth-child(2) {
-        display: none;
+        bottom: 535px;
+        width: 50px;
+        left: 43.8%;
     }
     .reviews__content-img {
         width: 240px;
@@ -193,5 +188,13 @@
     .footer__desc{
         padding-left:10%;
         width: 300px;
+    }
+}
+@media(max-width:400px){
+    .reviews__content img:nth-child(2) {
+       display: none;
+    }
+    .reviews__content-cards {
+        margin-top: 50px;
     }
 }
