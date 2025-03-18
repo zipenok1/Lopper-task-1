@@ -102,6 +102,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 241px;
+        box-shadow: none;
     }
     .subscription__content form input[type='email']{
         text-align: center;

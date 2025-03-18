@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="./styles/general.css">
     <title>Lopper</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
             </nav>
             <div class="header__tel">
                 <img src="./imges/icon/tel.svg" alt="tel">
-                <p>(01) 666 - 693 - 456</p>
+                <a class="general-tel" href="tel:(01) 666 - 693 - 456">(01) 666 - 693 - 456</a>
             </div>
             <div class="header__burger">
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
@@ -156,10 +156,10 @@
                 <p>Cras pulvinar mattis nunc sed blandit.</p>
                 <form class="subscription__form">
                     <input type="email" placeholder="ENTER EMAIL" required>
-                    <div class="subscription__form-button">
-                        <input type="submit" value="Subscribe">
+                    <button class="subscription__form-button">
+                        <p>Subscribe</p>
                         <img src="imges/arrowNewsletter.svg" alt="arrowNewsletter">
-                    </div>
+                    </button>
                 </form>
             </div>
         </section>
@@ -194,20 +194,20 @@
                     <p class="footer__content-title">Contact us</p>
                     <div class="footer__content-cards">
                         <img src="imges/icon/email.svg" alt="email">
-                        <p>contact@lop.com</p>
+                        <a class="general-tel" href="mailto:contact@lop.com">contact@lop.com</a>
                     </div>
                     <div class="footer__content-cards">
                         <img src="imges/icon/tel.svg" alt="tel">
-                        <p>856 - 693 - 456</p>
+                        <a class="general-tel" href="tel:(01) 666 - 693 - 456">(01) 666 - 693 - 456</a>
                     </div>
                 </div>
                 <div class="footer__content-text">
                     <p class="footer__content-title">Follow us</p>
                     <div class="footer__content-flex">
-                        <img src="imges/icon/footer1.svg" alt="footer">
-                        <img src="imges/icon/footer2.svg" alt="footer">
-                        <img src="imges/icon/footer3.svg" alt="footer">
-                        <img src="imges/icon/footer4.svg" alt="footer">
+                        <a href=""><img src="imges/icon/footer1.svg" alt="footer"></a>
+                        <a href=""><img src="imges/icon/footer2.svg" alt="footer"></a>
+                        <a href=""><img src="imges/icon/footer3.svg" alt="footer"></a>
+                        <a href=""><img src="imges/icon/footer4.svg" alt="footer"></a>
                     </div>
                 </div>
             </div> 
